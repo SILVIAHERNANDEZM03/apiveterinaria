@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Persona</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let veterinaria of (veterinaria | async)?.results" (click)="openDetails(veterinaria)">
+      {{ veterinaria.title }}
+    </button>
+  </ion-list>
+
+</ion-content>
